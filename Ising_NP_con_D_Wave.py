@@ -4,7 +4,7 @@ import dimod
 # Especificar los coeficientes del problema que queremos resolver es muy sencillo
 # Empezaremos con un caso muy simple
 
-J = {(1,1):1,(1,2):-2,(1,3): 6,(1,4):3,(2,1):-2,(2,2):-2,(2,3):-12,(2,4):-6,(3,1): 6,(3,2):-12,(3,3):6,(3,4):18,(4,1):3,(4,2):-6,(4,3):18,(4,4):3}
+J = {(1,1):1,(1,2):-2,(1,3): 6,(1,4):3,(2,1):-2,(2,2):4,(2,3):-12,(2,4):-6,(3,1): 6,(3,2):-12,(3,3):36,(3,4):18,(4,1):3,(4,2):-6,(4,3):18,(4,4):9}
 
 h = {}
 model = dimod.BinaryQuadraticModel(h, J, 0.0, dimod.SPIN)
